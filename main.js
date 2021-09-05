@@ -39,63 +39,37 @@ function getResult (query) {
     let recovered = document.querySelector('.recovered')
     recovered.innerText = `${data.recovered.toLocaleString()}`
     
- 
+    let city = document.querySelector('.country')
+    city.innerText= `${data.country}`
+
+  // let cases =document.querySelector('.cases')
+  // cases.innerText= `${ data.cases.toLocaleString()}`
     
-    // `${data.active.toLocaleString()}`
-    // `${data.active.toLocaleString()}`
-    // `${data.active.toLocaleString()}`
-    // `${data.active.toLocaleString()}`
-    // `${data.active.toLocaleString()}`
-    // `${data.active.toLocaleString()}`
-  document.getElementById("country").innerHTML = data.country;
+  // let critical = document.querySelector('.critical')
+  // critical.innerText=`${data.critical.toLocaleString()}` 
+
+  // let death = document.querySelector('.death')
+  // death.innerText=`${data.death.toLocaleString()}` 
+ 
   document.getElementById("cases").innerHTML = data.cases.toLocaleString();
   document.getElementById("critical").innerHTML = data.critical.toLocaleString();
   document.getElementById("death").innerHTML = data.deaths.toLocaleString();
-  
   document.getElementById("tests").innerHTML = data.tests.toLocaleString();
   document.getElementById("flag").src = data.countryInfo.flag;
-  }
+  
+}
 
   fetch('https://covid19-cdn.workpointnews.com/api/vaccine.json')
     .then((response) => {
       return response.json();
       })
       .then((data) => {
-        // console.log(data)
-        document.getElementById("vac").innerHTML = data.all.today;
+        console.log(data)
+        // document.getElementById("vac").innerHTML = data.all.today;
+
+          let all = document.querySelector('.all')
+           all.innerText = `${data.all.total}`
       });
-  
-
-      fetch('https://corona.lmao.ninja/v3/covid-19/vaccine/coverage/countries/thailand')
-      .then((res) => {
-        return res.json();
-  
-      })
-      .then((data) => {
-        console.log(data.timeline);    
-  
-        //   Object.keys(data.timeline).forEach(elem => {
-        //   console.log(data.timeline[elem]);
-        // });
-        
-        
-         Object.keys(data.timeline).forEach((value, index) => {
-         if(index==Object.keys(data.timeline).length-1){
-           console.log(data.timeline[value]);
-
-           
-           
-           let all = document.querySelector('.all')
-           all.innerText = `${data.timeline[value]}`
-
-         }
-         })
-        
-
-
-
-      });
-
   
 function getelem (query) {
 
@@ -140,33 +114,33 @@ function getelems (query) {
 }
 
 
-// fetch('https://covid19-cdn.workpointnews.com/api/constants.json')
-// .then((res) => {
-//   return res.json();
+fetch('https://covid19-cdn.workpointnews.com/api/constants.json')
+.then((res) => {
+  return res.json();
 
-// })
-// .then((data) => {
-//   console.log(data);    
+})
+.then((data) => {
+  console.log(data);    
 
-//   //   Object.keys(data.timeline).forEach(elem => {
-//   //   console.log(data.timeline[elem]);
-//   // });
+  //   Object.keys(data.timeline).forEach(elem => {
+  //   console.log(data.timeline[elem]);
+  // });
   
   
-//    Object.keys(data).forEach((value, index) => {
-//    if(index==Object.keys(data).length-1){
-//      console.log(data[value].substring(6,12));
-//      console.log(data[value]);
-//     //  document.getElementById("all").innerHTML = data.timeline[value]
+  //  Object.keys(data).forEach((value, index) => {
+  //  if(index==Object.keys(data).length-1){
+  //    console.log(data[value].substring(6,12));
+  //    console.log(data[value]);
+  //    document.getElementById("all").innerHTML = data.timeline[value]
 
 
-//    }
-//    })
+  //  }
+  //  })
   
 
 
 
-// });
+});
 
 fetch('https://covid19-cdn.workpointnews.com/api/trend/th.json')
 .then((res) => {

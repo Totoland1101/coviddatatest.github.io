@@ -17,27 +17,32 @@ body{
   padding: 10%;
 }
 
-
-/* .board {
-  column-count: 2;
-  column-gap: 1rem; 
-} */
-
 .title {
-  font-size: 20px;
+  font-size: 25px;
   margin: 0 0 30px;
   text-align: center;
 }
 
+.country{
+  text-align: center;
+  font-size: 25px;
+}
+
 img#flag {
-  height: 20px;
-  width: 20px;
+  height: auto;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .search-box{
-  text-align: center;
   margin-bottom: 15px;
   border-radius: 20px;
+  width:100%;
+}
+.i .fa-tachometer{
+ text-align: center;
 }
 
 .cardA {
@@ -103,7 +108,7 @@ img#flag {
   background: #FFFF;
   color: #A6DFFF;
   padding: 5%;
-  font-size: 25px;
+  font-size: 22px;
   margin-bottom: 15px;
   border-radius: 20px;
   border-style: solid;
@@ -112,37 +117,31 @@ img#flag {
   height: auto;
 }
 
+.textC{
+  color: #000;
+}
 .cardCB{
   background: #FFFF;
-  color: #A0F5E1;
+  color: #F9D1CC; 
   padding: 5%;
-  font-size: 25px;
-  margin-bottom: 15px;
-  border-radius: 20px;
-  border-style: solid;
-  /* box-shadow: 0 3px 10px rgb(255 230 226 / 1); */
-  width: auto;
-  height: auto
-}
-
-.cardCC{
-  background: #FFFF;
-  /* color: #C83421; */
-  padding: 5%;
-  font-size: 25px;
+  font-size: 22px;
   margin-bottom: 15px;
   border-radius: 20px;
   border-style: solid;
   /* box-shadow: 0 3px 10px rgb(255 230 226 / 1); */
   width: auto;
   height: auto;
+}
+.textD{
+  color: #000;
+  font-size: 22px;
 }
 
 .cardCD{
   background: #FFFF;
-  /* color: #C83421;  */
+  color: #A0F5E1; 
   padding: 5%;
-  font-size: 25px;
+  font-size: 22px;
   margin-bottom: 15px;
   border-radius: 20px;
   border-style: solid;
@@ -150,18 +149,25 @@ img#flag {
   width: auto;
   height: auto;
 }
+.textE{
+  color: #000;
+}
 
 .cardCF{
   background: #FFFF;
-  /* color: #C83421; */
+  color: #C83400;
   padding: 5%;
-  font-size: 25px;
+  font-size: 22px;
   margin-bottom: 15px;
   border-radius: 20px;
   border-style: solid;
   /* box-shadow: 0 3px 10px rgb(255 230 226 / 1); */
   width: auto;
   height: auto;
+}
+.textF{
+  font-size: 22px;
+  color: #000;
 }
 
 
