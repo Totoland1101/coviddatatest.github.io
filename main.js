@@ -57,23 +57,25 @@ function getResult (query) {
   document.getElementById("tests").innerHTML = data.tests.toLocaleString();
   document.getElementById("flag").src = data.countryInfo.flag;
   
+
+
 }
 
-  fetch('https://covid19-cdn.workpointnews.com/api/vaccine.json')
-    .then((response) => {
-      return response.json();
-      })
-      .then((data) => {
-        console.log(data)
-        // document.getElementById("vac").innerHTML = data.all.today;
+fetch('https://covid19-cdn.workpointnews.com/api/vaccine.json')
+  .then((response) => {
+  return response.json();
+})
+  .then((data) => {
+     console.log(data)
+      // document.getElementById("vac").innerHTML = data.all.today;
 
-          let all = document.querySelector('.all')
-           all.innerText = `${data.all.total}`
-      });
-  
+      let all = document.querySelector('.all')
+          all.innerText = `${data.all.total}`         
+});
+
 function getelem (query) {
 
-   fetch(`https://corona.lmao.ninja/v3/covid-19/vaccine/coverage/countries/${query}`)
+  fetch(`https://corona.lmao.ninja/v3/covid-19/vaccine/coverage/countries/${query}`)
     .then((response) => {
       return response.json();
       })
@@ -86,10 +88,11 @@ function getelem (query) {
             let all = document.querySelector('.all')
             all.innerText = `${data.timeline[value]}`
 
-          }
-          })
-      });
-    
+
+
+        }
+     })
+  });
 }
 
 function getelems (query) {
@@ -106,11 +109,11 @@ function getelems (query) {
 
            let all = document.querySelector('.all')
            all.innerText = `${data.timeline[value]}`
-         
-         }
-         })
-     });
-   
+
+           
+      }  
+     })
+  });
 }
 
 
@@ -136,9 +139,6 @@ fetch('https://covid19-cdn.workpointnews.com/api/constants.json')
 
   //  }
   //  })
-  
-
-
 
 });
 
@@ -164,13 +164,4 @@ fetch('https://covid19-cdn.workpointnews.com/api/trend/th.json')
 
    }
    })
-  
-
-
-
 });
-
-
-
-
-    

@@ -98,11 +98,9 @@ img#flag {
   color: #3EA0D7;
 }
   
-
 .all{
   text-align: right;
 }
-
 
 .cardCA{
   background: #FFFF;
@@ -170,7 +168,6 @@ img#flag {
   color: #000;
 }
 
-
 @media screen and (max-width: 768px){
   .board {
     column-count: 1;
@@ -180,8 +177,6 @@ img#flag {
   }
 } 
 
- 
- 
 @media screen and (max-width: 500px){
   .board {
     column-count: 1;
@@ -190,6 +185,3 @@ img#flag {
     column-count: 2;
   }
 } 
-
-
-
