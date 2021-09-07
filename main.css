@@ -117,6 +117,7 @@ body{
 
 .textC{
   color: #000;
+  font-size: 22px;
 }
 .cardCB{
   background: #FFFF;
@@ -149,7 +150,7 @@ body{
 }
 .textE{
   color: #000;
-  font-size: 19px;
+  font-size: 22px;
 }
 
 .cardCF{
@@ -165,7 +166,7 @@ body{
   height: 148px;
 }
 .textF{
-  font-size: 19px;
+  font-size: 22px;
   color: #000;
 }
 
