@@ -28,7 +28,7 @@ body{
   font-size: 25px;
 }
 
-img#flag {
+.flag{
   height: auto;
   width: 50px;
   margin-left: auto;
@@ -110,9 +110,9 @@ img#flag {
   margin-bottom: 15px;
   border-radius: 20px;
   border-style: solid;
-  /* box-shadow: 0 3px 10px rgb(255 230 226 / 1); */
-  width: auto;
-  height: auto;
+  box-shadow: 0 3px 10px rgb(166 223 255 / 1);
+  width: 142px;
+  height: 148px;
 }
 
 .textC{
@@ -126,9 +126,9 @@ img#flag {
   margin-bottom: 15px;
   border-radius: 20px;
   border-style: solid;
-  /* box-shadow: 0 3px 10px rgb(255 230 226 / 1); */
-  width: auto;
-  height: auto;
+  box-shadow: 0 3px 10px rgb(249 209 204 / 1);
+  width: 142px;
+  height: 148px;
 }
 .textD{
   color: #000;
@@ -143,12 +143,13 @@ img#flag {
   margin-bottom: 15px;
   border-radius: 20px;
   border-style: solid;
-  /* box-shadow: 0 3px 10px rgb(255 230 226 / 1); */
-  width: auto;
-  height: auto;
+  box-shadow: 0 3px 10px rgb(160 245 255 / 1);
+  width: 142px;
+  height: 148px;
 }
 .textE{
   color: #000;
+  font-size: 19px;
 }
 
 .cardCF{
@@ -159,12 +160,12 @@ img#flag {
   margin-bottom: 15px;
   border-radius: 20px;
   border-style: solid;
-  /* box-shadow: 0 3px 10px rgb(255 230 226 / 1); */
-  width: auto;
-  height: auto;
+  box-shadow: 0 3px 10px rgb(200 52 0 / 1);
+  width: 142px;
+  height: 148px;
 }
 .textF{
-  font-size: 22px;
+  font-size: 19px;
   color: #000;
 }
 
